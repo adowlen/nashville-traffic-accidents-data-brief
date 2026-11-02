@@ -1,0 +1,1157 @@
+{
+  "dataset": "Nashville Traffic Accidents (Traffic_Accidents_2 layer 0)",
+  "snapshot_date": "2026-11-02",
+  "rows": 222903,
+  "unit": "one row = one traffic accident reported to MNPD (metadata v2.0, 2024-05-06; source system TITAN). Counts are REPORTED crashes, not an exposure rate: the dataset carries no traffic-volume denominator, and the metadata warns the export is not an official MNPD accident report and is subject to change during investigation",
+  "coverage": {
+    "datetime_local_min": "2019-01-01 00:00:00-06:00",
+    "datetime_local_max": "2026-10-31 19:32:00-05:00",
+    "window_note": "served layer runs from 2019-01-01 to 2026-10-31 (America/Chicago) although the metadata describes the source system as 2010-present; 2026 is a partial year and is never compared as a full year - jan_oct table is the like-for-like frame",
+    "complete_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "totals_known_counts_rows": {
+    "crashes": 222902,
+    "injury_crashes": 67953,
+    "injury_crash_share": 0.3049,
+    "injuries_people": 95219,
+    "fatal_crashes": 865,
+    "fatal_crash_share": 0.00388,
+    "fatalities_people": 926
+  },
+  "totals_denominator_note": "severity shares use the 222902 rows with counts populated; 1 empty stub row (ObjectId 6, only Accident_Number/Date_and_Time/ObjectId served) is excluded from severity denominators and counted in rows",
+  "by_year": {
+    "2019": {
+      "crashes": 37918,
+      "injury_crashes": 9682,
+      "injury_crash_share": 0.2553,
+      "injuries_people": 13626,
+      "fatal_crashes": 100,
+      "fatal_crash_share": 0.00264,
+      "fatalities_people": 104,
+      "hit_and_run_y_share_of_known": 0.2208,
+      "precinct_unknown_share": 0.1199,
+      "midnight_suspect_rows": 1940,
+      "complete_year": true
+    },
+    "2020": {
+      "crashes": 27408,
+      "injury_crashes": 7462,
+      "injury_crash_share": 0.2723,
+      "injuries_people": 10284,
+      "fatal_crashes": 108,
+      "fatal_crash_share": 0.00394,
+      "fatalities_people": 114,
+      "hit_and_run_y_share_of_known": 0.264,
+      "precinct_unknown_share": 0.1254,
+      "midnight_suspect_rows": 1618,
+      "complete_year": true
+    },
+    "2021": {
+      "crashes": 28003,
+      "injury_crashes": 8810,
+      "injury_crash_share": 0.3146,
+      "injuries_people": 12383,
+      "fatal_crashes": 118,
+      "fatal_crash_share": 0.00421,
+      "fatalities_people": 127,
+      "hit_and_run_y_share_of_known": 0.2843,
+      "precinct_unknown_share": 0.1292,
+      "midnight_suspect_rows": 2334,
+      "complete_year": true
+    },
+    "2022": {
+      "crashes": 26319,
+      "injury_crashes": 9189,
+      "injury_crash_share": 0.3491,
+      "injuries_people": 13021,
+      "fatal_crashes": 125,
+      "fatal_crash_share": 0.00475,
+      "fatalities_people": 133,
+      "hit_and_run_y_share_of_known": 0.2791,
+      "precinct_unknown_share": 0.1208,
+      "midnight_suspect_rows": 2520,
+      "complete_year": true
+    },
+    "2023": {
+      "crashes": 27102,
+      "injury_crashes": 8966,
+      "injury_crash_share": 0.3308,
+      "injuries_people": 12744,
+      "fatal_crashes": 126,
+      "fatal_crash_share": 0.00465,
+      "fatalities_people": 138,
+      "hit_and_run_y_share_of_known": 0.298,
+      "precinct_unknown_share": 0.1305,
+      "midnight_suspect_rows": 2491,
+      "complete_year": true
+    },
+    "2024": {
+      "crashes": 26155,
+      "injury_crashes": 8186,
+      "injury_crash_share": 0.313,
+      "injuries_people": 11419,
+      "fatal_crashes": 103,
+      "fatal_crash_share": 0.00394,
+      "fatalities_people": 111,
+      "hit_and_run_y_share_of_known": 0.2934,
+      "precinct_unknown_share": 0.0861,
+      "midnight_suspect_rows": 2127,
+      "complete_year": true
+    },
+    "2025": {
+      "crashes": 26985,
+      "injury_crashes": 8437,
+      "injury_crash_share": 0.3127,
+      "injuries_people": 11711,
+      "fatal_crashes": 100,
+      "fatal_crash_share": 0.00371,
+      "fatalities_people": 112,
+      "hit_and_run_y_share_of_known": 0.2752,
+      "precinct_unknown_share": 0.0236,
+      "midnight_suspect_rows": 2432,
+      "complete_year": true
+    },
+    "2026": {
+      "crashes": 23012,
+      "injury_crashes": 7221,
+      "injury_crash_share": 0.3138,
+      "injuries_people": 10031,
+      "fatal_crashes": 85,
+      "fatal_crash_share": 0.00369,
+      "fatalities_people": 87,
+      "hit_and_run_y_share_of_known": 0.2715,
+      "precinct_unknown_share": 0.0005,
+      "midnight_suspect_rows": 2246,
+      "complete_year": false
+    }
+  },
+  "jan_oct_by_year": {
+    "2019": {
+      "crashes": 31669,
+      "injury_crashes": 8112,
+      "injury_crash_share": 0.2561,
+      "injuries_people": 11410,
+      "fatal_crashes": 85,
+      "fatal_crash_share": 0.00268,
+      "fatalities_people": 88
+    },
+    "2020": {
+      "crashes": 22783,
+      "injury_crashes": 6269,
+      "injury_crash_share": 0.2752,
+      "injuries_people": 8635,
+      "fatal_crashes": 92,
+      "fatal_crash_share": 0.00404,
+      "fatalities_people": 97
+    },
+    "2021": {
+      "crashes": 23353,
+      "injury_crashes": 7214,
+      "injury_crash_share": 0.3089,
+      "injuries_people": 10133,
+      "fatal_crashes": 95,
+      "fatal_crash_share": 0.00407,
+      "fatalities_people": 103
+    },
+    "2022": {
+      "crashes": 21939,
+      "injury_crashes": 7714,
+      "injury_crash_share": 0.3516,
+      "injuries_people": 10974,
+      "fatal_crashes": 106,
+      "fatal_crash_share": 0.00483,
+      "fatalities_people": 114
+    },
+    "2023": {
+      "crashes": 22610,
+      "injury_crashes": 7543,
+      "injury_crash_share": 0.3336,
+      "injuries_people": 10705,
+      "fatal_crashes": 101,
+      "fatal_crash_share": 0.00447,
+      "fatalities_people": 111
+    },
+    "2024": {
+      "crashes": 21963,
+      "injury_crashes": 6882,
+      "injury_crash_share": 0.3133,
+      "injuries_people": 9648,
+      "fatal_crashes": 88,
+      "fatal_crash_share": 0.00401,
+      "fatalities_people": 96
+    },
+    "2025": {
+      "crashes": 22359,
+      "injury_crashes": 7066,
+      "injury_crash_share": 0.316,
+      "injuries_people": 9777,
+      "fatal_crashes": 81,
+      "fatal_crash_share": 0.00362,
+      "fatalities_people": 91
+    },
+    "2026": {
+      "crashes": 23012,
+      "injury_crashes": 7221,
+      "injury_crash_share": 0.3138,
+      "injuries_people": 10031,
+      "fatal_crashes": 85,
+      "fatal_crash_share": 0.00369,
+      "fatalities_people": 87
+    }
+  },
+  "coding_completeness": {
+    "minimally_coded_rows": 13127,
+    "minimally_coded_definition": "rows null on Collision_Type_Description AND Weather_Description AND Illumination_Description (the collision-null set and the all-three-null set are identical, 13,127 rows; HarmfulCodes is also null on 99.9% of them)",
+    "minimally_coded_severity": {
+      "crashes": 13126,
+      "injury_crashes": 0,
+      "injury_crash_share": 0.0,
+      "injuries_people": 0,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0
+    },
+    "minimally_coded_share_by_year": {
+      "2019": 0.0848,
+      "2020": 0.0719,
+      "2021": 0.0544,
+      "2022": 0.0461,
+      "2023": 0.0436,
+      "2024": 0.05,
+      "2025": 0.0548,
+      "2026": 0.0536
+    },
+    "fully_coded_rows_none_of_three_null": 200695,
+    "fully_coded_severity": {
+      "crashes": 200695,
+      "injury_crashes": 65245,
+      "injury_crash_share": 0.3251,
+      "injuries_people": 91429,
+      "fatal_crashes": 862,
+      "fatal_crash_share": 0.0043,
+      "fatalities_people": 922
+    },
+    "reading": "severity shares on minimally-coded rows are 0 by construction of that subpopulation, never evidence that an unknown category is safe. Headline bases are printed from this build's totals (all-reported and fully-coded severity blocks). A separate one-year gap: weather is null on many more rows in 2020 than in other years, so weather splits crossing 2020 carry that gap"
+  },
+  "trend_reading": "Reported crashes fell from 37,918 in 2019 to a 26,155-28,003 band in 2020-2025, while fatal crashes were 100 in 2019, peaked at 126 in 2022-2023, and injury crashes stayed in a 7,462-9,189 band (2020-2025). Per-crash severity therefore reads higher after 2019. STRONGEST ALTERNATIVE EXPLANATION, carried not resolved: the mix of what gets reported may have changed (COVID-era volume drop in Mar-Jun 2020 is visible in the monthly series; minor-crash reporting thresholds and staffing are not in this dataset), so the claim is the two measured series (volume down, fatal/injury counts flat-to-up), never a claim that Nashville driving became more dangerous per mile - there is no exposure denominator in this layer",
+  "hit_and_run": {
+    "y_rows": 60336,
+    "n_rows": 162555,
+    "unknown_rows": 12,
+    "y_share_of_known": 0.2707,
+    "injury_share_y": 0.1803,
+    "injury_share_n": 0.3511,
+    "note": "hit-and-run crashes are LESS often injury crashes (18.0%) than non-hit-and-run (35.1%) in the reported data; the headline share is a share of reported crashes with the field populated"
+  },
+  "severity_by_collision_type": [
+    {
+      "crashes": 65984,
+      "injury_crashes": 22527,
+      "injury_crash_share": 0.3414,
+      "injuries_people": 31615,
+      "fatal_crashes": 73,
+      "fatal_crash_share": 0.00111,
+      "fatalities_people": 79,
+      "category": "Front to Rear",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 58377,
+      "injury_crashes": 21904,
+      "injury_crash_share": 0.3752,
+      "injuries_people": 33368,
+      "fatal_crashes": 160,
+      "fatal_crash_share": 0.00274,
+      "fatalities_people": 178,
+      "category": "ANGLE",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 37857,
+      "injury_crashes": 13936,
+      "injury_crash_share": 0.3681,
+      "injuries_people": 15990,
+      "fatal_crashes": 509,
+      "fatal_crash_share": 0.01345,
+      "fatalities_people": 525,
+      "category": "NOT COLLISION W/MOTOR VEHICLE-TRANSPORT",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 29754,
+      "injury_crashes": 4275,
+      "injury_crash_share": 0.1437,
+      "injuries_people": 5570,
+      "fatal_crashes": 28,
+      "fatal_crash_share": 0.00094,
+      "fatalities_people": 29,
+      "category": "SIDESWIPE - SAME DIRECTION",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 13126,
+      "injury_crashes": 0,
+      "injury_crash_share": 0.0,
+      "injuries_people": 0,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "unknown (null)",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 5544,
+      "injury_crashes": 3109,
+      "injury_crash_share": 0.5608,
+      "injuries_people": 5524,
+      "fatal_crashes": 87,
+      "fatal_crash_share": 0.01569,
+      "fatalities_people": 106,
+      "category": "HEAD-ON",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 4663,
+      "injury_crashes": 1086,
+      "injury_crash_share": 0.2329,
+      "injuries_people": 1547,
+      "fatal_crashes": 4,
+      "fatal_crash_share": 0.00086,
+      "fatalities_people": 5,
+      "category": "SIDESWIPE - OPPOSITE DIRECTION",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 3210,
+      "injury_crashes": 287,
+      "injury_crash_share": 0.0894,
+      "injuries_people": 365,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "UNKNOWN",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 2212,
+      "injury_crashes": 634,
+      "injury_crash_share": 0.2866,
+      "injuries_people": 991,
+      "fatal_crashes": 4,
+      "fatal_crash_share": 0.00181,
+      "fatalities_people": 4,
+      "category": "OTHER",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 1133,
+      "injury_crashes": 103,
+      "injury_crash_share": 0.0909,
+      "injuries_people": 130,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "Rear to Side",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 1041,
+      "injury_crashes": 92,
+      "injury_crash_share": 0.0884,
+      "injuries_people": 119,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "REAR-TO-REAR",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 1,
+      "injury_crashes": 0,
+      "injury_crash_share": 0.0,
+      "injuries_people": 0,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "REAR END",
+      "small_n_flag": true
+    }
+  ],
+  "collision_counter_all_rows": {
+    "HEAD-ON": 5544,
+    "REAR END": 1,
+    "Front to Rear": 65984,
+    "SIDESWIPE - SAME DIRECTION": 29754,
+    "null": 13127,
+    "ANGLE": 58377,
+    "REAR-TO-REAR": 1041,
+    "NOT COLLISION W/MOTOR VEHICLE-TRANSPORT": 37857,
+    "UNKNOWN": 3210,
+    "OTHER": 2212,
+    "SIDESWIPE - OPPOSITE DIRECTION": 4663,
+    "Rear to Side": 1133
+  },
+  "severity_by_illumination": [
+    {
+      "crashes": 134199,
+      "injury_crashes": 43243,
+      "injury_crash_share": 0.3222,
+      "injuries_people": 60623,
+      "fatal_crashes": 297,
+      "fatal_crash_share": 0.00221,
+      "fatalities_people": 309,
+      "category": "DAYLIGHT",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 51640,
+      "injury_crashes": 17595,
+      "injury_crash_share": 0.3407,
+      "injuries_people": 24835,
+      "fatal_crashes": 393,
+      "fatal_crash_share": 0.00761,
+      "fatalities_people": 428,
+      "category": "DARK - LIGHTED",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 13806,
+      "injury_crashes": 188,
+      "injury_crash_share": 0.0136,
+      "injuries_people": 247,
+      "fatal_crashes": 3,
+      "fatal_crash_share": 0.00022,
+      "fatalities_people": 4,
+      "category": "unknown (null)",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 12565,
+      "injury_crashes": 4294,
+      "injury_crash_share": 0.3417,
+      "injuries_people": 5829,
+      "fatal_crashes": 143,
+      "fatal_crash_share": 0.01138,
+      "fatalities_people": 153,
+      "category": "DARK - NOT LIGHTED",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 3946,
+      "injury_crashes": 1293,
+      "injury_crash_share": 0.3277,
+      "injuries_people": 1871,
+      "fatal_crashes": 15,
+      "fatal_crash_share": 0.0038,
+      "fatalities_people": 15,
+      "category": "DUSK",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 2538,
+      "injury_crashes": 874,
+      "injury_crash_share": 0.3444,
+      "injuries_people": 1204,
+      "fatal_crashes": 12,
+      "fatal_crash_share": 0.00473,
+      "fatalities_people": 15,
+      "category": "DAWN",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 2531,
+      "injury_crashes": 91,
+      "injury_crash_share": 0.036,
+      "injuries_people": 103,
+      "fatal_crashes": 1,
+      "fatal_crash_share": 0.0004,
+      "fatalities_people": 1,
+      "category": "UNKNOWN",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 1393,
+      "injury_crashes": 292,
+      "injury_crash_share": 0.2096,
+      "injuries_people": 404,
+      "fatal_crashes": 1,
+      "fatal_crash_share": 0.00072,
+      "fatalities_people": 1,
+      "category": "Dark-Unknown Lighting",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 284,
+      "injury_crashes": 83,
+      "injury_crash_share": 0.2923,
+      "injuries_people": 103,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "OTHER",
+      "small_n_flag": false
+    }
+  ],
+  "illumination_note": "per-crash severity by lighting, computed in this build from severity_by_illumination: DARK - NOT LIGHTED vs DAYLIGHT fatal-crash shares are printed in that table (about 5x per reported crash on the 2026-11-01 study, recomputed here), and the ordering holds in complete years 2019-2025 alone (study control). This is severity per reported crash, NOT risk per mile: the layer has no exposure (miles driven by lighting condition), and darkness correlates with hour, speed and alcohol involvement, none of which this layer measures",
+  "severity_by_weather": [
+    {
+      "crashes": 135314,
+      "injury_crashes": 44756,
+      "injury_crash_share": 0.3308,
+      "injuries_people": 62974,
+      "fatal_crashes": 594,
+      "fatal_crash_share": 0.00439,
+      "fatalities_people": 638,
+      "category": "CLEAR",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 25786,
+      "injury_crashes": 8183,
+      "injury_crash_share": 0.3173,
+      "injuries_people": 11590,
+      "fatal_crashes": 83,
+      "fatal_crash_share": 0.00322,
+      "fatalities_people": 90,
+      "category": "CLOUDY",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 21572,
+      "injury_crashes": 2527,
+      "injury_crash_share": 0.1171,
+      "injuries_people": 3552,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "unknown (null)",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 21512,
+      "injury_crashes": 6862,
+      "injury_crash_share": 0.319,
+      "injuries_people": 9312,
+      "fatal_crashes": 82,
+      "fatal_crash_share": 0.00381,
+      "fatalities_people": 87,
+      "category": "RAIN",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 13429,
+      "injury_crashes": 4601,
+      "injury_crash_share": 0.3426,
+      "injuries_people": 6465,
+      "fatal_crashes": 80,
+      "fatal_crash_share": 0.00596,
+      "fatalities_people": 83,
+      "category": "NO ADVERSE CONDITIONS",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 2391,
+      "injury_crashes": 138,
+      "injury_crash_share": 0.0577,
+      "injuries_people": 161,
+      "fatal_crashes": 7,
+      "fatal_crash_share": 0.00293,
+      "fatalities_people": 7,
+      "category": "UNKNOWN",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 1507,
+      "injury_crashes": 536,
+      "injury_crash_share": 0.3557,
+      "injuries_people": 744,
+      "fatal_crashes": 16,
+      "fatal_crash_share": 0.01062,
+      "fatalities_people": 18,
+      "category": "FOG",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 987,
+      "injury_crashes": 245,
+      "injury_crash_share": 0.2482,
+      "injuries_people": 291,
+      "fatal_crashes": 1,
+      "fatal_crash_share": 0.00101,
+      "fatalities_people": 1,
+      "category": "SNOW",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 156,
+      "injury_crashes": 37,
+      "injury_crash_share": 0.2372,
+      "injuries_people": 45,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "SLEET, HAIL",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 93,
+      "injury_crashes": 28,
+      "injury_crash_share": 0.3011,
+      "injuries_people": 34,
+      "fatal_crashes": 1,
+      "fatal_crash_share": 0.01075,
+      "fatalities_people": 1,
+      "category": "OTHER (NARRATIVE)",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 83,
+      "injury_crashes": 18,
+      "injury_crash_share": 0.2169,
+      "injuries_people": 21,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "BLOWING SNOW",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 34,
+      "injury_crashes": 9,
+      "injury_crash_share": 0.2647,
+      "injuries_people": 9,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "SEVERE CROSSWIND",
+      "small_n_flag": false
+    },
+    {
+      "crashes": 23,
+      "injury_crashes": 8,
+      "injury_crash_share": 0.3478,
+      "injuries_people": 13,
+      "fatal_crashes": 1,
+      "fatal_crash_share": 0.04348,
+      "fatalities_people": 1,
+      "category": "SMOG, SMOKE",
+      "small_n_flag": true
+    },
+    {
+      "crashes": 14,
+      "injury_crashes": 5,
+      "injury_crash_share": 0.3571,
+      "injuries_people": 8,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "BLOWING SAND/SOIL/DIRT",
+      "small_n_flag": true
+    },
+    {
+      "crashes": 1,
+      "injury_crashes": 0,
+      "injury_crash_share": 0.0,
+      "injuries_people": 0,
+      "fatal_crashes": 0,
+      "fatal_crash_share": 0.0,
+      "fatalities_people": 0,
+      "category": "FREEZING RAIN/FREEZING DRIZZLE",
+      "small_n_flag": true
+    }
+  ],
+  "precinct": {
+    "served_labels_truncated_to_6_chars": true,
+    "full_name_map": {
+      "CENTRA": "Central",
+      "EAST": "East",
+      "HERMIT": "Hermitage",
+      "MADISO": "Madison",
+      "MIDTOW": "Midtown Hills",
+      "NORTH": "North",
+      "SOUTH": "South",
+      "SOUTHE": "Southeast",
+      "WEST": "West"
+    },
+    "known_rows": 201686,
+    "unknown_rows": 21217,
+    "unknown_share_by_year_note": "precinct is null on ~12-13% of rows in 2019-2023, 8.6% in 2024, 2.4% in 2025 and 0.05% in 2026: precinct shares are computed on known rows per period, and cross-period precinct trend claims must carry the completeness change",
+    "by_precinct": [
+      {
+        "crashes": 28566,
+        "injury_crashes": 8511,
+        "injury_crash_share": 0.2979,
+        "injuries_people": 11882,
+        "fatal_crashes": 127,
+        "fatal_crash_share": 0.00445,
+        "fatalities_people": 138,
+        "precinct": "South",
+        "hit_and_run_y_share_of_known": 0.2926
+      },
+      {
+        "crashes": 27179,
+        "injury_crashes": 9117,
+        "injury_crash_share": 0.3354,
+        "injuries_people": 13045,
+        "fatal_crashes": 115,
+        "fatal_crash_share": 0.00423,
+        "fatalities_people": 130,
+        "precinct": "Southeast",
+        "hit_and_run_y_share_of_known": 0.3153
+      },
+      {
+        "crashes": 26311,
+        "injury_crashes": 7485,
+        "injury_crash_share": 0.2845,
+        "injuries_people": 10297,
+        "fatal_crashes": 56,
+        "fatal_crash_share": 0.00213,
+        "fatalities_people": 63,
+        "precinct": "Midtown Hills",
+        "hit_and_run_y_share_of_known": 0.22
+      },
+      {
+        "crashes": 25551,
+        "injury_crashes": 8015,
+        "injury_crash_share": 0.3137,
+        "injuries_people": 11330,
+        "fatal_crashes": 103,
+        "fatal_crash_share": 0.00403,
+        "fatalities_people": 108,
+        "precinct": "Hermitage",
+        "hit_and_run_y_share_of_known": 0.2409
+      },
+      {
+        "crashes": 20842,
+        "injury_crashes": 6442,
+        "injury_crash_share": 0.3091,
+        "injuries_people": 8959,
+        "fatal_crashes": 104,
+        "fatal_crash_share": 0.00499,
+        "fatalities_people": 109,
+        "precinct": "North",
+        "hit_and_run_y_share_of_known": 0.2943
+      },
+      {
+        "crashes": 19314,
+        "injury_crashes": 5757,
+        "injury_crash_share": 0.2981,
+        "injuries_people": 7751,
+        "fatal_crashes": 67,
+        "fatal_crash_share": 0.00347,
+        "fatalities_people": 71,
+        "precinct": "West",
+        "hit_and_run_y_share_of_known": 0.2187
+      },
+      {
+        "crashes": 19186,
+        "injury_crashes": 6445,
+        "injury_crash_share": 0.3359,
+        "injuries_people": 9366,
+        "fatal_crashes": 97,
+        "fatal_crash_share": 0.00506,
+        "fatalities_people": 99,
+        "precinct": "Madison",
+        "hit_and_run_y_share_of_known": 0.2823
+      },
+      {
+        "crashes": 18197,
+        "injury_crashes": 4464,
+        "injury_crash_share": 0.2453,
+        "injuries_people": 6006,
+        "fatal_crashes": 43,
+        "fatal_crash_share": 0.00236,
+        "fatalities_people": 46,
+        "precinct": "Central",
+        "hit_and_run_y_share_of_known": 0.2532
+      },
+      {
+        "crashes": 16540,
+        "injury_crashes": 4770,
+        "injury_crash_share": 0.2884,
+        "injuries_people": 6650,
+        "fatal_crashes": 63,
+        "fatal_crash_share": 0.00381,
+        "fatalities_people": 64,
+        "precinct": "East",
+        "hit_and_run_y_share_of_known": 0.3018
+      }
+    ]
+  },
+  "zip_top10_by_crashes": [
+    {
+      "crashes": 26126,
+      "injury_crashes": 8766,
+      "injury_crash_share": 0.3355,
+      "injuries_people": 12615,
+      "fatal_crashes": 104,
+      "fatal_crash_share": 0.00398,
+      "fatalities_people": 119,
+      "zip": "37013"
+    },
+    {
+      "crashes": 22805,
+      "injury_crashes": 7174,
+      "injury_crash_share": 0.3146,
+      "injuries_people": 10092,
+      "fatal_crashes": 105,
+      "fatal_crash_share": 0.0046,
+      "fatalities_people": 115,
+      "zip": "37211"
+    },
+    {
+      "crashes": 17461,
+      "injury_crashes": 4949,
+      "injury_crash_share": 0.2834,
+      "injuries_people": 6805,
+      "fatal_crashes": 64,
+      "fatal_crash_share": 0.00367,
+      "fatalities_people": 69,
+      "zip": "37210"
+    },
+    {
+      "crashes": 17359,
+      "injury_crashes": 5476,
+      "injury_crash_share": 0.3155,
+      "injuries_people": 7791,
+      "fatal_crashes": 91,
+      "fatal_crash_share": 0.00524,
+      "fatalities_people": 94,
+      "zip": "37207"
+    },
+    {
+      "crashes": 16554,
+      "injury_crashes": 4181,
+      "injury_crash_share": 0.2526,
+      "injuries_people": 5567,
+      "fatal_crashes": 39,
+      "fatal_crash_share": 0.00236,
+      "fatalities_people": 40,
+      "zip": "37203"
+    },
+    {
+      "crashes": 15160,
+      "injury_crashes": 5046,
+      "injury_crash_share": 0.3328,
+      "injuries_people": 7407,
+      "fatal_crashes": 71,
+      "fatal_crash_share": 0.00468,
+      "fatalities_people": 73,
+      "zip": "37115"
+    },
+    {
+      "crashes": 12191,
+      "injury_crashes": 4012,
+      "injury_crash_share": 0.3291,
+      "injuries_people": 5738,
+      "fatal_crashes": 59,
+      "fatal_crash_share": 0.00484,
+      "fatalities_people": 64,
+      "zip": "37217"
+    },
+    {
+      "crashes": 10617,
+      "injury_crashes": 3097,
+      "injury_crash_share": 0.2917,
+      "injuries_people": 4184,
+      "fatal_crashes": 29,
+      "fatal_crash_share": 0.00273,
+      "fatalities_people": 31,
+      "zip": "37209"
+    },
+    {
+      "crashes": 10136,
+      "injury_crashes": 3192,
+      "injury_crash_share": 0.3149,
+      "injuries_people": 4625,
+      "fatal_crashes": 30,
+      "fatal_crash_share": 0.00296,
+      "fatalities_people": 31,
+      "zip": "37214"
+    },
+    {
+      "crashes": 7683,
+      "injury_crashes": 2464,
+      "injury_crash_share": 0.3207,
+      "injuries_people": 3474,
+      "fatal_crashes": 34,
+      "fatal_crash_share": 0.00443,
+      "fatalities_people": 35,
+      "zip": "37076"
+    }
+  ],
+  "time_of_day": {
+    "midnight_suspect_rows_excluded": 17709,
+    "denominator_after_exclusion": 205194,
+    "hour_counts_excl_midnight_suspect": {
+      "0": 3549,
+      "1": 3121,
+      "2": 2832,
+      "3": 2632,
+      "4": 2111,
+      "5": 3500,
+      "6": 6744,
+      "7": 10711,
+      "8": 10120,
+      "9": 8321,
+      "10": 8314,
+      "11": 9888,
+      "12": 11466,
+      "13": 11799,
+      "14": 12876,
+      "15": 15659,
+      "16": 16681,
+      "17": 17083,
+      "18": 12731,
+      "19": 8785,
+      "20": 7720,
+      "21": 6974,
+      "22": 6326,
+      "23": 5251
+    },
+    "peak_hour_local": 17,
+    "weekend_fatal_crash_share": 0.00545,
+    "weekday_fatal_crash_share": 0.00336,
+    "note": "17,709 rows (7.9%) are stamped exactly 00:00 local - the unknown-time placeholder; their dates are used, their times are not. Real times also round to :00/:15/:30, so hour shares are approximate"
+  },
+  "vulnerable_road_users": {
+    "pedestrian_involved": {
+      "crashes": 3330,
+      "injury_crashes": 2984,
+      "injury_crash_share": 0.8961,
+      "injuries_people": 3206,
+      "fatal_crashes": 278,
+      "fatal_crash_share": 0.08348,
+      "fatalities_people": 280,
+      "share_of_all_fatalities": 0.3024
+    },
+    "pedalcycle_involved": {
+      "crashes": 530,
+      "injury_crashes": 485,
+      "injury_crash_share": 0.9151,
+      "injuries_people": 518,
+      "fatal_crashes": 8,
+      "fatal_crash_share": 0.01509,
+      "fatalities_people": 8
+    },
+    "method": "involvement read from HarmfulCodes tokens (Appendix D: 8=PEDESTRIAN, 9=PEDALCYCLE), any position in the ;-separated event list. HarmfulDescriptions is NOT used for pedalcycle: the string PEDALCYCLE appears on 0 rows while code 9 appears on 530"
+  },
+  "intersections": {
+    "method": "Street_Address normalized by sorting the two sides of ' & ' (raw strings split single junctions by token order); the junk bucket 'UNKNOWN RAMP  &  ROAD' and rows without an intersection string are excluded from the named lists and counted here",
+    "junk_unknown_ramp_rows": 1265,
+    "rows_with_intersection_key": 170113,
+    "control_briley_pair_merged_rows": 788,
+    "top10_by_injury_crashes": [
+      {
+        "intersection": "BRILEY PKWYN & BRILEY PKWYS",
+        "crashes": 788,
+        "injury_crashes": 269,
+        "fatal_crashes": 2,
+        "injuries": 375,
+        "fatalities": 2
+      },
+      {
+        "intersection": "NOLENSVILLE PIKE & NOLENSVILLE RD",
+        "crashes": 744,
+        "injury_crashes": 250,
+        "fatal_crashes": 3,
+        "injuries": 338,
+        "fatalities": 3
+      },
+      {
+        "intersection": "BELL RD & MURFREESBORO PKE",
+        "crashes": 592,
+        "injury_crashes": 218,
+        "fatal_crashes": 1,
+        "injuries": 312,
+        "fatalities": 1
+      },
+      {
+        "intersection": "MOUNTAIN SPRINGS RD & MURFREESBORO PKE",
+        "crashes": 522,
+        "injury_crashes": 217,
+        "fatal_crashes": 1,
+        "injuries": 325,
+        "fatalities": 1
+      },
+      {
+        "intersection": "I 24 & I24 W EXT RAMP",
+        "crashes": 628,
+        "injury_crashes": 191,
+        "fatal_crashes": 1,
+        "injuries": 271,
+        "fatalities": 1
+      },
+      {
+        "intersection": "I 40 & I40 W EXT RAMP",
+        "crashes": 705,
+        "injury_crashes": 189,
+        "fatal_crashes": 3,
+        "injuries": 257,
+        "fatalities": 3
+      },
+      {
+        "intersection": "I 40 & I40 E EXT RAMP",
+        "crashes": 712,
+        "injury_crashes": 188,
+        "fatal_crashes": 3,
+        "injuries": 260,
+        "fatalities": 3
+      },
+      {
+        "intersection": "MURFREESBORO PIKE & MURFREESBORO RD",
+        "crashes": 547,
+        "injury_crashes": 187,
+        "fatal_crashes": 2,
+        "injuries": 271,
+        "fatalities": 2
+      },
+      {
+        "intersection": "BRILEY PKWYE & BRILEY PKWYW",
+        "crashes": 498,
+        "injury_crashes": 186,
+        "fatal_crashes": 2,
+        "injuries": 255,
+        "fatalities": 2
+      },
+      {
+        "intersection": "I 24 & I24 E EXT RAMP",
+        "crashes": 606,
+        "injury_crashes": 184,
+        "fatal_crashes": 1,
+        "injuries": 255,
+        "fatalities": 1
+      }
+    ],
+    "top10_by_total_crashes": [
+      {
+        "intersection": "BRILEY PKWYN & BRILEY PKWYS",
+        "crashes": 788,
+        "injury_crashes": 269,
+        "fatal_crashes": 2,
+        "injuries": 375,
+        "fatalities": 2
+      },
+      {
+        "intersection": "NOLENSVILLE PIKE & NOLENSVILLE RD",
+        "crashes": 744,
+        "injury_crashes": 250,
+        "fatal_crashes": 3,
+        "injuries": 338,
+        "fatalities": 3
+      },
+      {
+        "intersection": "I 40 & I40 E EXT RAMP",
+        "crashes": 712,
+        "injury_crashes": 188,
+        "fatal_crashes": 3,
+        "injuries": 260,
+        "fatalities": 3
+      },
+      {
+        "intersection": "I 40 & I40 W EXT RAMP",
+        "crashes": 705,
+        "injury_crashes": 189,
+        "fatal_crashes": 3,
+        "injuries": 257,
+        "fatalities": 3
+      },
+      {
+        "intersection": "I 24 & I24 W EXT RAMP",
+        "crashes": 628,
+        "injury_crashes": 191,
+        "fatal_crashes": 1,
+        "injuries": 271,
+        "fatalities": 1
+      },
+      {
+        "intersection": "I 24 & I24 E EXT RAMP",
+        "crashes": 606,
+        "injury_crashes": 184,
+        "fatal_crashes": 1,
+        "injuries": 255,
+        "fatalities": 1
+      },
+      {
+        "intersection": "BELL RD & MURFREESBORO PKE",
+        "crashes": 592,
+        "injury_crashes": 218,
+        "fatal_crashes": 1,
+        "injuries": 312,
+        "fatalities": 1
+      },
+      {
+        "intersection": "MURFREESBORO PIKE & MURFREESBORO RD",
+        "crashes": 547,
+        "injury_crashes": 187,
+        "fatal_crashes": 2,
+        "injuries": 271,
+        "fatalities": 2
+      },
+      {
+        "intersection": "MOUNTAIN SPRINGS RD & MURFREESBORO PKE",
+        "crashes": 522,
+        "injury_crashes": 217,
+        "fatal_crashes": 1,
+        "injuries": 325,
+        "fatalities": 1
+      },
+      {
+        "intersection": "BRILEY PKWYE & BRILEY PKWYW",
+        "crashes": 498,
+        "injury_crashes": 186,
+        "fatal_crashes": 2,
+        "injuries": 255,
+        "fatalities": 2
+      }
+    ],
+    "named_list_caveat": "intersection aggregates, not individual records; interstate ramp pseudo-addresses (I-40/I-24/I-65 EXT/ENT RAMP) are system buckets spanning many physical ramps and are labeled as served"
+  },
+  "vehicles": {
+    "rows_with_vehicles_ge1": 197795,
+    "rows_unknown_incl_zero_and_null": 25107,
+    "median_vehicles_on_known": 2.0,
+    "mean_vehicles_on_known": 1.935,
+    "outage_window": "2021-11 to 2022-12: the served 0-share is 15.1% in Nov 2021, 99%+ Dec 2021-Feb 2022 and May-Nov 2022, ~50% Mar-Apr 2022, 35.4% Dec 2022, vs 0.0-0.5% in normal months; 0 is read as not-recorded everywhere, and no vehicles figure crosses the outage window"
+  },
+  "property_damage_field": "UNUSABLE as a population split in the served view: Y on 18,676 rows, N on 1 rows, blank on 204,226. Metadata v2.0 says blank means No, but a field that returns N only a handful of times is a flag, not a measured No; no figure in stats.json uses it",
+  "counters": {
+    "weather_all_rows": {
+      "NO ADVERSE CONDITIONS": 13429,
+      "CLEAR": 135314,
+      "null": 21573,
+      "CLOUDY": 25786,
+      "RAIN": 21512,
+      "UNKNOWN": 2391,
+      "FOG": 1507,
+      "OTHER (NARRATIVE)": 93,
+      "SNOW": 987,
+      "SLEET, HAIL": 156,
+      "BLOWING SNOW": 83,
+      "SMOG, SMOKE": 23,
+      "SEVERE CROSSWIND": 34,
+      "BLOWING SAND/SOIL/DIRT": 14,
+      "FREEZING RAIN/FREEZING DRIZZLE": 1
+    },
+    "illumination_all_rows": {
+      "null": 13807,
+      "DAYLIGHT": 134199,
+      "DARK - LIGHTED": 51640,
+      "DARK - NOT LIGHTED": 12565,
+      "DAWN": 2538,
+      "DUSK": 3946,
+      "UNKNOWN": 2531,
+      "Dark-Unknown Lighting": 1393,
+      "OTHER": 284
+    }
+  },
+  "accident_number_note": "Accident_Number is unique on all rows. Its first 4 digits are the crash year on all but ~40 rows (legacy/late-entered numbers, e.g. the empty stub carries a 2013 number on a 2020 date); the field is an ID, not a date"
+}

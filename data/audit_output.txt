@@ -1,0 +1,16 @@
+rows in cleaned layer: 222903
+[10.1.1] vehicles 0-sentinel rows: 25107 mapped unknown (never averaged as 0 vehicles); coords unknown 2 (1 null stub + 1 served 0,0); severity stub 1 PASS
+[10.1.2] polarity: all 17709 flagged rows are exactly 00:00 local; unflagged hour-0 rows 3549 carry real minutes; hit_and_run_known Y count == served Y count 60,336 PASS
+[10.1.3] injury-crash share denominator = 222902 known-count crashes, recomputed 0.3049; people totals (95,219 injuries / 926 fatalities) kept as people counts PASS
+[10.1.4] Collision_Type_Description Counter: 11 values + null bucket, counts sum to 222903 PASS
+[10.1.4] Weather_Description Counter: 14 values + null bucket, counts sum to 222903 PASS
+[10.1.4] Illumination_Description Counter: 8 values + null bucket, counts sum to 222903 PASS
+[10.1.4] Precinct Counter: 9 served labels (all <=6 chars, truncation documented) + null bucket, sums to 222903; collision Counter matches stats.json exactly PASS
+[10.1.5] Precinct: known 201686 + unknown 21217 = 222903 PASS
+[10.1.5] Hit_and_Run: known 222891 + unknown 12 = 222903 PASS
+[10.1.5] Collision_Type_Description: known 209776 + unknown 13127 = 222903 PASS
+[10.1.5] Lat: known 222901 + unknown 2 = 222903 PASS
+[10.2] controls: (a) Briley junction name-order pair merges under the normalized key -> 788; (b) RPA and Precinct are jointly null on 21214 rows (one missingness mechanism); (c) pedestrian involvement agrees code-vs-description at 3,330, while pedalcycle is codes-only (530 vs 0 in descriptions) PASS
+[completeness] minimally-coded rows 13127 == collision-null rows 13127, with 0 injury crashes among them (definitional, not safety); fully-coded basis 200695 crashes at 0.3251 injury share vs all-rows 0.3049 PASS
+[12.3] effective window: 2019-01-01 00:00:00-06:00 to 2026-10-31 19:32:00-05:00; complete years 2019-2025, 2026 is a partial year and is compared only through the jan_oct table PASS
+ALL SECTION 10 GATES PASS

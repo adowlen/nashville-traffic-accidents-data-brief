@@ -1,0 +1,10 @@
+crashes,injury_crashes,injury_crash_share,injuries_people,fatal_crashes,fatal_crash_share,fatalities_people,category,small_n_flag
+134199,43243,0.3222,60623,297,0.00221,309,DAYLIGHT,False
+51640,17595,0.3407,24835,393,0.00761,428,DARK - LIGHTED,False
+13806,188,0.0136,247,3,0.00022,4,unknown (null),False
+12565,4294,0.3417,5829,143,0.01138,153,DARK - NOT LIGHTED,False
+3946,1293,0.3277,1871,15,0.0038,15,DUSK,False
+2538,874,0.3444,1204,12,0.00473,15,DAWN,False
+2531,91,0.036,103,1,0.0004,1,UNKNOWN,False
+1393,292,0.2096,404,1,0.00072,1,Dark-Unknown Lighting,False
+284,83,0.2923,103,0,0.0,0,OTHER,False

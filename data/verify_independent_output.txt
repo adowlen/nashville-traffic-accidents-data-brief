@@ -1,0 +1,70 @@
+==============================================================================
+INDEPENDENT VERIFICATION - Nashville Traffic Accidents study
+run at (UTC): 2026-11-02T13:37:11.472695+00:00
+claims file : /home/hatch/workspace/goals/daily-civic-data-brief/hidden_files/nashville-traffic-accidents-brief-2026-11-02/stats.json
+snapshot    : /home/hatch/workspace/goals/daily-civic-data-brief/hidden_files/stack/nashville/snapshots/2026-11-02/traffic_accidents_raw.parquet
+live service: https://services2.arcgis.com/HdTo6HJqh92wn4D8/arcgis/rest/services/Traffic_Accidents_2/FeatureServer/0
+==============================================================================
+
+--- Method A: raw snapshot recount (stdlib aggregation) ---
+[PASS] A01 total rows | claimed=222903 recomputed=parquet_meta=222903, decoded=222903 | snapshot
+[PASS] A02 ObjectId unique | claimed=222903 recomputed=222903 | snapshot
+[PASS] A03 Accident_Number unique | claimed=222903 recomputed=222903 | snapshot
+[PASS] A04 exactly 1 empty stub row | claimed=1 recomputed=1 | snapshot
+       stub row: ObjectId=6 Accident_Number=20131173280
+[PASS] A05 known-count rows | claimed=222902 recomputed=222902 | snapshot
+[PASS] A05b null counts confined to the stub row | claimed=1 recomputed=1 | snapshot
+[PASS] A06 injury crashes | claimed=67953 recomputed=67953 | snapshot
+[PASS] A07 fatal crashes | claimed=865 recomputed=865 | snapshot
+[PASS] A08 injuries (people) | claimed=95219 recomputed=95219 | snapshot
+[PASS] A09 fatalities (people) | claimed=926 recomputed=926 | snapshot
+[PASS] A10 hit-and-run Y rows | claimed=60336 recomputed=60336 | snapshot
+[PASS] A11 hit-and-run share of known | claimed=60336/222891 = 27.07% recomputed=60336/222891 = 27.07% | snapshot
+[PASS] A12 timestamps exactly 00:00 America/Chicago | claimed=17709 recomputed=17709 | snapshot (epoch divmod + zoneinfo)
+[PASS] A13 distinct served precinct labels | claimed=9 recomputed=9 ['CENTRA', 'EAST', 'HERMIT', 'MADISO', 'MIDTOW', 'NORTH', 'SOUTH', 'SOUTHE', 'WEST'] | snapshot
+[PASS] A14 all precinct labels <= 6 chars | claimed=<=6 recomputed=max=6 | snapshot
+[PASS] A15 null precinct rows | claimed=21217 recomputed=21217 | snapshot
+[PASS] A16 Southeast precinct (served label SOUTHE) crashes | claimed=27179 recomputed=27179 | snapshot
+[PASS] A17 collision type: Front to Rear | claimed=65984 recomputed=65984 | snapshot
+[PASS] A18 collision type: ANGLE | claimed=58377 recomputed=58377 | snapshot
+[PASS] A19 collision type: null (all rows) | claimed=13127 recomputed=13127 | snapshot
+[PASS] A20 pedestrian-involved crashes (HarmfulCodes token 8) | claimed=3330 recomputed=3330 | snapshot
+[PASS] A21 pedestrian fatalities (people) | claimed=280 recomputed=280 | snapshot
+[PASS] A22 pedalcycle-involved crashes (HarmfulCodes token 9) | claimed=530 recomputed=530 | snapshot
+[PASS] A23 rows with vehicles == 0 | claimed=25107 recomputed=25107 | snapshot
+[PASS] A24-2019 crashes in local year 2019 (known-count rows) | claimed=37918 recomputed=37918 | snapshot
+[PASS] A24-2020 crashes in local year 2020 (known-count rows) | claimed=27408 recomputed=27408 | snapshot
+[PASS] A24-2021 crashes in local year 2021 (known-count rows) | claimed=28003 recomputed=28003 | snapshot
+[PASS] A24-2022 crashes in local year 2022 (known-count rows) | claimed=26319 recomputed=26319 | snapshot
+[PASS] A24-2023 crashes in local year 2023 (known-count rows) | claimed=27102 recomputed=27102 | snapshot
+[PASS] A24-2024 crashes in local year 2024 (known-count rows) | claimed=26155 recomputed=26155 | snapshot
+[PASS] A24-2025 crashes in local year 2025 (known-count rows) | claimed=26985 recomputed=26985 | snapshot
+[PASS] A24-2026 crashes in local year 2026 (known-count rows) | claimed=23012 recomputed=23012 | snapshot
+[PASS] A25 all-rows vs by_year difference is stub-only (+1 in 2020) | claimed={2019: 0, 2020: 1, 2021: 0, 2022: 0, 2023: 0, 2024: 0, 2025: 0, 2026: 0} recomputed={2019: 0, 2020: 1, 2021: 0, 2022: 0, 2023: 0, 2024: 0, 2025: 0, 2026: 0} | snapshot
+
+--- Method B: live ArcGIS server-side queries ---
+live layer total = 222903 (snapshot 222903, drift +0; live service rolls daily, drift >= 0 is legitimate, drift < 0 is not)
+[PASS] B01 live total rows >= snapshot rows | claimed=>=222903 recomputed=222903 | live count
+[PASS] B02 live sum of injuries (people) | claimed=95219 recomputed=95219 | live (exact, no drift at verify time)
+[PASS] B03 live sum of fatalities (people) | claimed=926 recomputed=926 | live (exact, no drift at verify time)
+[PASS] B04 live injury crashes (Number_of_Injuries > 0) | claimed=67953 recomputed=67953 | live (exact, no drift at verify time)
+[PASS] B05 live fatal crashes (Number_of_Fatalities > 0) | claimed=865 recomputed=865 | live (exact, no drift at verify time)
+[PASS] B06 live rows with null counts (the stub) | claimed=1 recomputed=1 | live count
+[PASS] B07 live hit-and-run Y rows and share of known | claimed=60336 = 27.07% recomputed=60336/222891 = 27.07% | live (exact, no drift at verify time)
+[PASS] B08 live precinct labels: 9 values, all <= 6 chars | claimed=9, max 6 recomputed=9 ['CENTRA', 'EAST', 'HERMIT', 'MADISO', 'MIDTOW', 'NORTH', 'SOUTH', 'SOUTHE', 'WEST'], max=6 | live groupBy
+[PASS] B09 live null precinct rows | claimed=21217 recomputed=21217 | live (exact, no drift at verify time)
+[PASS] B10 live Southeast (SOUTHE) crashes | claimed=27179 recomputed=27179 | live (exact, no drift at verify time)
+[PASS] B11 live collision type: Front to Rear | claimed=65984 recomputed=65984 | live (exact, no drift at verify time)
+[PASS] B12 live collision type: ANGLE | claimed=58377 recomputed=58377 | live (exact, no drift at verify time)
+[PASS] B13 live collision type: null | claimed=13127 recomputed=13127 | live (exact, no drift at verify time)
+[PASS] B14 live pedestrian-involved crashes (token 8, LIKE pattern) | claimed=3330 recomputed=3330 | live (exact, no drift at verify time)
+[PASS] B15 live pedestrian fatalities (people) | claimed=280 recomputed=280 | live (exact, no drift at verify time)
+[PASS] B16 live pedalcycle-involved crashes (token 9, LIKE pattern) | claimed=530 recomputed=530 | live (exact, no drift at verify time)
+[PASS] B17 live rows with vehicles == 0 | claimed=25107 recomputed=25107 | live (exact, no drift at verify time)
+[PASS] B18 live timestamps exactly 00:00 America/Chicago | claimed=17709 recomputed=17709 (of 18113 server-filtered 05:00/06:00-UTC candidates) | live (exact, no drift at verify time)
+
+NOTE on per-year live check: ArcGIS EXTRACT(YEAR FROM Date_and_Time) is a UTC year, not an America/Chicago local year, so a server-side groupBy cannot reproduce the local-year table without the candidate-fetch pattern used in B18. Per-year figures are verified strictly against the snapshot in A24/A25; the live total (B01) bounds any drift.
+
+==============================================================================
+RESULT: 51/51 checks passed
+==============================================================================

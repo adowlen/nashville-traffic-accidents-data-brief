@@ -1,0 +1,7 @@
+{
+ "checks_passed": 51,
+ "checks_total": 51,
+ "snapshot_date": "2026-11-02",
+ "rows": 222903,
+ "source_output": "data/verify_independent_output.txt"
+}
